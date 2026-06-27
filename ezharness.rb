@@ -5,21 +5,21 @@
 class Ezharness < Formula
   desc "Per-repo evidence gate for git — done means done."
   homepage "https://github.com/thanhhoanace/ezharness"
-  version "6.1.3"
+  version "6.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/thanhhoanace/ezharness/releases/download/v6.1.3/ezh_6.1.3_darwin_amd64.tar.gz"
-      sha256 "ed8b1863f30891c16c4daaee355a3a650f2d7d3f2a2b0c0735f16582bfd63ece"
+      url "https://github.com/thanhhoanace/ezharness/releases/download/v6.2.0/ezh_6.2.0_darwin_amd64.tar.gz"
+      sha256 "82f87fb71ae8e732ddfe66e938c262ca996bdd0a5db9cc2d4af7076922f29ca2"
 
       define_method(:install) do
         bin.install "ezh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/thanhhoanace/ezharness/releases/download/v6.1.3/ezh_6.1.3_darwin_arm64.tar.gz"
-      sha256 "b1d9bcdc0c5cba97e26fd97b6956e94d82a567976ae54914fd13b00b0aac9b68"
+      url "https://github.com/thanhhoanace/ezharness/releases/download/v6.2.0/ezh_6.2.0_darwin_arm64.tar.gz"
+      sha256 "dc28bf92a94c71195ecb91a51bc5720b362598aab7c65081ed9c88aa77fef3f4"
 
       define_method(:install) do
         bin.install "ezh"
@@ -29,15 +29,15 @@ class Ezharness < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thanhhoanace/ezharness/releases/download/v6.1.3/ezh_6.1.3_linux_amd64.tar.gz"
-      sha256 "63a0b63215b3474feebb8a2b75e3fdd7d7bd3c5ca6cc0008974fcdd9212f4688"
+      url "https://github.com/thanhhoanace/ezharness/releases/download/v6.2.0/ezh_6.2.0_linux_amd64.tar.gz"
+      sha256 "f924e19224709049431c59b5df0a53b59ca5d30619a121f63cf5df0fca3f9d60"
       define_method(:install) do
         bin.install "ezh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thanhhoanace/ezharness/releases/download/v6.1.3/ezh_6.1.3_linux_arm64.tar.gz"
-      sha256 "ce19d95042f2551c31b29e0ff7a5152d99a1576d8c5b8f7ae89489dad79f4b24"
+      url "https://github.com/thanhhoanace/ezharness/releases/download/v6.2.0/ezh_6.2.0_linux_arm64.tar.gz"
+      sha256 "b2687240cfcdb962594f1af9dd4524011cd4b7b2da833ac0c59348488d3aba95"
       define_method(:install) do
         bin.install "ezh"
       end
